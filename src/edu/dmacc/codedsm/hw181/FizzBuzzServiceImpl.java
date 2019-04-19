@@ -2,6 +2,12 @@ package edu.dmacc.codedsm.hw181;
 
 public class FizzBuzzServiceImpl<message> implements FizzBuzzService{
 
+    private MapRepository repository;
+
+    public FizzBuzzServiceImpl(MapRepository repository){
+        this.repository = repository;
+    }
+
 
     @Override
     public Result performFizzBuzzLogic( Submission submission ) {
@@ -18,6 +24,8 @@ public class FizzBuzzServiceImpl<message> implements FizzBuzzService{
         Result result = new Result();
         result.setMessage(message);
         result.setSubmission(submission);
+
+        repository.save (result);
 
         return result;
     }
