@@ -1,0 +1,1 @@
+Result{submission=Submission{inputNumber=27, userName='Pam'}, message='Input was not fizzy'}
