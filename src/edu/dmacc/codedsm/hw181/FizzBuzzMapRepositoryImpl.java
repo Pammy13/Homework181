@@ -5,7 +5,7 @@ import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ResultTreeType;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FizzBuzzMapRepository implements MapRepository {
+public class FizzBuzzMapRepositoryImpl implements MapRepository {
 
     private Map<Integer, Result> storage = new HashMap<>();
 
